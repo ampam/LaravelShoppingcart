@@ -1,4 +1,4 @@
-## LaravelShoppingcart
+## LaravelShoppingcart - Fork of hardevine/LaravelShoppingCart
 [![Build Status](https://travis-ci.org/hardevine/LaravelShoppingcart.png?branch=master)](https://travis-ci.org/hardevine/LaravelShoppingcart)
 [![Total Downloads](https://poser.pugx.org/hardevine/shoppingcart/downloads.png)](https://packagist.org/packages/hardevine/shoppingcart)
 [![Latest Stable Version](https://poser.pugx.org/hardevine/shoppingcart/v/stable)](https://packagist.org/packages/hardevine/shoppingcart)
@@ -13,7 +13,7 @@ Install the package through [Composer](http://getcomposer.org/).
 
 Run the Composer require command from the Terminal:
 
-    composer require hardevine/shoppingcart
+    composer require ampam/shoppingcart
     
 If you're using Laravel 5.5, this is all there is to do. 
 
