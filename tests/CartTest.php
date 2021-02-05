@@ -85,7 +85,7 @@ class CartTest extends TestCase
         $this->assertItemsInCart(1, $cart->instance(Cart::DEFAULT_INSTANCE));
         $this->assertItemsInCart(1, $cart->instance('wishlist'));
     }
-    
+
     /** @test */
     public function it_can_add_an_item()
     {
@@ -833,7 +833,7 @@ class CartTest extends TestCase
         $serialized = serialize($cart->content());
 
         $this->assertDatabaseHas('shoppingcart', ['identifier' => $identifier, 'instance' => 'default', 'content' => $serialized]);
-        
+
         Event::assertDispatched('cart.stored');
     }
 
@@ -858,7 +858,7 @@ class CartTest extends TestCase
 
         $cart->restore($identifier);
 
-        $this->assertItemsInCart(1, $cart);       
+        $this->assertItemsInCart(1, $cart);
 
         Event::assertDispatched('cart.restored');
     }
@@ -929,7 +929,7 @@ class CartTest extends TestCase
 
     /**
      * Set the config number format.
-     * 
+     *
      * @param int    $decimals
      * @param string $decimalPoint
      * @param string $thousandSeperator
@@ -938,6 +938,6 @@ class CartTest extends TestCase
     {
         $this->app['config']->set('cart.format.decimals', $decimals);
         $this->app['config']->set('cart.format.decimal_point', $decimalPoint);
-        $this->app['config']->set('cart.format.thousand_seperator', $thousandSeperator);
+        $this->app['config']->set('cart.format.thousand_separator', $thousandSeperator);
     }
 }
